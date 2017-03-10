@@ -1,0 +1,58 @@
+// *** TOP SECTION ***
+
+// TOP NAVBAR;
+.top {
+  background: url('/images/taj-pic.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+
+  > * {
+    margin: 0.5rem;
+  }
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  // transform: translateX(-5rem);
+}
+
+.navbar-logo {
+
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-title {
+  display: inline;
+  color: $c-white;
+}
+
+.navbar-right {
+  // transform: translateX(5rem);
+  display: flex;
+  align-items: center;
+  // flex-grow: 1;
+}
+
+.navbar-right-item {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: $c-white;
+}
+
+.search-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5rem;
+  text-decoration: none;
+}
