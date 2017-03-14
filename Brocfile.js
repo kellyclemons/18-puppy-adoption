@@ -29,7 +29,7 @@ const plugins = [
   commonjs({ include: 'node_modules/**' }),
   builtins(),
   globals(),
-  // vue(),
+  vue(),
 ];
 
 
