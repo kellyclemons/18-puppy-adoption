@@ -18,7 +18,7 @@
       <tbody>
 
         <tr>
-          <td>Luna</td>
+          <td>Lola</td>
           <td>10</td>
           <td>
             <router-link class="is-primary" to="detail">Read More</router-link>
@@ -40,7 +40,7 @@
       <tbody>
 
         <tr>
-          <td>Luna</td>
+          <td>Lola</td>
           <td>10</td>
           <td>
             <router-link class="is-primary" to="detail">Read More</router-link>
@@ -48,7 +48,7 @@
         </tr>
 
         <tr>
-          <td>Luna</td>
+          <td>Lola</td>
           <td>10</td>
           <td>
             <router-link class="is-primary" to="detail">Read More</router-link>
@@ -56,7 +56,7 @@
         </tr>
 
         <tr>
-          <td>Luna</td>
+          <td>Lola</td>
           <td>10</td>
           <td>
             <router-link class="is-primary" to="detail">Read More</router-link>
@@ -64,7 +64,7 @@
         </tr>
 
         <tr>
-          <td>Luna</td>
+          <td>Lola</td>
           <td>10</td>
           <td>
             <router-link class="is-primary" to="detail">Read More</router-link>
@@ -72,7 +72,7 @@
         </tr>
 
         <tr>
-          <td>Luna</td>
+          <td>Lola</td>
           <td>10</td>
           <td>
             <router-link class="is-primary" to="detail">Read More</router-link>

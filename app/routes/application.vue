@@ -14,80 +14,88 @@
   <div class="container">
     <div class="columns">
       <div class="column is-4">
-        <nav class="column-top">
-          <p class="column-top__heading">Adopt a Pupper</p>
+        <nav class="panel">
+          <p class="panel-heading">Adopt a Pupper</p>
 
-          <div class="row">
-            <div class="left">
-              <span class="image is-64x64">
-                <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-              </span>
+          <div class="panel-block">
+            <div class="media">
+              <div class="media-left">
+                <span class="image is-64x64">
+                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
+                </span>
+              </div>
+              <div class="media-right">
+                <h2 class="name">Lola</h2>
+                <router-link class="is-primary" to="/detail">Read More</router-link>
+              </div>
             </div>
-            <div class="right">
-              <h2 class="name">Luna</h2>
-              <router-link class="is-primary" to="/detail">Read More</router-link>
+          </div>
+          <div class="panel-block">
+            <div class="media">
+              <div class="media-left">
+                <span class="image is-64x64">
+                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
+                </span>
+              </div>
+              <div class="media-right">
+                <h2 class="name">Lola</h2>
+                <router-link class="is-primary" to="/detail">Read More</router-link>
+              </div>
+            </div>
+          </div>
+          <div class="panel-block">
+            <div class="media">
+              <div class="media-left">
+                <span class="image is-64x64">
+                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
+                </span>
+              </div>
+              <div class="media-right">
+                <h2 class="name">Lola</h2>
+                <router-link class="is-primary" to="/detail">Read More</router-link>
+              </div>
+            </div>
+          </div>
+          <div class="panel-block">
+            <div class="media">
+              <div class="media-left">
+                <span class="image is-64x64">
+                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
+                </span>
+              </div>
+              <div class="media-right">
+                <h2 class="name">Lola</h2>
+                <router-link class="is-primary" to="/detail">Read More</router-link>
+              </div>
+            </div>
+          </div>
+          <div class="panel-block">
+            <div class="media">
+              <div class="media-left">
+                <span class="image is-64x64">
+                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
+                </span>
+              </div>
+              <div class="media-right">
+                <h2 class="name">Lola</h2>
+                <router-link class="is-primary" to="/detail">Read More</router-link>
+              </div>
+            </div>
+          </div>
+          <div class="panel-block">
+            <div class="media">
+              <div class="media-left">
+                <span class="image is-64x64">
+                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
+                </span>
+              </div>
+              <div class="media-right">
+                <h2 class="name">Lola</h2>
+                <router-link class="is-primary" to="/detail">Read More</router-link>
+              </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="left">
-              <span class="image is-64x64">
-                <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-              </span>
-            </div>
-            <div class="right">
-              <h2 class="name">Luna</h2>
-              <router-link class="is-primary" to="/detail">Read More</router-link>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="left">
-              <span class="image is-64x64">
-                <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-              </span>
-            </div>
-            <div class="right">
-              <h2 class="name">Luna</h2>
-              <router-link class="is-primary" to="/detail">Read More</router-link>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="left">
-              <span class="image is-64x64">
-                <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-              </span>
-            </div>
-            <div class="right">
-              <h2 class="name">Luna</h2>
-              <router-link class="is-primary" to="/detail">Read More</router-link>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="left">
-              <span class="image is-64x64">
-                <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-              </span>
-            </div>
-            <div class="right">
-              <h2 class="name">Luna</h2>
-              <router-link class="is-primary" to="/detail">Read More</router-link>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="left">
-              <span class="image is-64x64">
-                <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-              </span>
-            </div>
-            <div class="right">
-              <h2 class="name">Luna</h2>
-              <router-link class="is-primary" to="/detail">Read More</router-link>
-            </div>
-          </div>
 
         </nav>
       </div>
