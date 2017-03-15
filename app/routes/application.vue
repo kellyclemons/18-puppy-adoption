@@ -50,7 +50,13 @@
 <script>
 import store from '../store';
 import { findAll } from '../actions/puppy';
+import Index from './index.vue';
+
 export default {
+  components: {
+    Index,
+  },
+
   name: 'Application',
 
   data() {
