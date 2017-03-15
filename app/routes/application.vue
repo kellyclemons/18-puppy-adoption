@@ -6,7 +6,7 @@
       </div>
       <div class="nav-right">
         <router-link :to="{ name: 'index' }" class="nav-item">All Puppies</router-link>
-        <router-link :to="{ name: 'new'}" class="nav-item">Add Puppy</router-link>
+        <router-link :to="{ name: 'new' }" class="nav-item">Add Puppy</router-link>
       </div>
     </nav>
 
@@ -17,7 +17,7 @@
         <nav class="panel">
           <p class="panel-heading">Adopt a Pupper</p>
 
-          <div class="panel-block" v-for:"puppy in puppies">
+          <div class="panel-block" v-for="puppy in puppies">
             <div class="media">
               <div class="media-left">
                 <span class="image is-64x64">
@@ -26,7 +26,7 @@
               </div>
               <div class="media-right">
                 <h2 class="name">{{ puppy.name }}</h2>
-                <router-link class="is-primary" :to"{name: 'detail', params: { id: puppy.id } }">Read More</router-link>
+                <router-link class="is-primary" :to="{ name: 'detail', params: { id: puppy.id } }">Read More</router-link>
               </div>
             </div>
           </div>
