@@ -58,7 +58,12 @@
 </template>
 
 <script>
+import store from '../store';
+import { create } from '../actions/puppy';
 export default {
+
+  name: 'new',
+
   data() {
     return {
       formValues: {
@@ -74,7 +79,11 @@ export default {
   },
 
   methods: {
-
+    submit() {
+      store.dispatch(create(this.formValues)).then(() => {
+        this.$router.push({ name: 'index' });
+      });
+    },
   },
 };
 </script>

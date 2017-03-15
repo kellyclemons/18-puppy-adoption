@@ -10,7 +10,7 @@
       </h2>
       <div class="columns">
         <div class="column is-half is-offset-one-quarter">
-          <span class="image">
+          <span class="image is-square">
             <img v-bind:src="currentPuppy.image_url" alt="">
           </span>
         </div>
@@ -86,7 +86,7 @@ export default {
 
   methods: {
     getPuppy() {
-      this.currentPuppy = this.puppies.find(puppy => puppy.id === this.$route.params.id);
+      this.currentPuppy = this.puppies.find(puppy => puppy.id == this.$route.params.id);
     },
   },
 

@@ -21,7 +21,7 @@ const routes = [
     component: New,
   },
   {
-    path: '/detail',
+    path: '/puppy/:id',
     name: 'detail',
     component: Detail,
   },
