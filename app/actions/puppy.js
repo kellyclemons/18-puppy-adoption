@@ -1,5 +1,12 @@
 const apiUrl = 'https://tiy-tn-class-api-fall-16.herokuapp.com/puppies/ryan';
+const jsonHeaders = {
+  Accept: 'application/json',
+  'Content-Type': 'application/json'
+};
 
+function parseJson(r) {
+  return r.json();
+}
 // Export a named 'findAllComplete' function that returns an action object
 // for 'PUPPY@FINDALL_COMPLETE'
 export function findAllComplete(data = []) {

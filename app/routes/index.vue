@@ -5,7 +5,7 @@
         <h2 class="title">Puppies for Adoption</h2>
       </div>
       <div class="nav-right">
-        <router-link class="button is-info" to="/new">Add a Pupper</router-link>
+        <router-link class="button is-primary" :to="{ name: 'new' }">Add a Pupper</router-link>
       </div>
     </div>
 
@@ -53,14 +53,24 @@
 </template>
 
 <script>
+import store from '../store';
+import { findAll } from '../actions/puppy';
 export default {
+  name: 'Index',
+
   data() {
     return {
+      // Use 'this.$select' to attach the local 'puppies' data to the 'puppies' propety in the state
+      puppies: this.$select('puppies'),
     };
   },
 
-  methods: {
+  // When the app component loads, dispatch the 'findAll' function
+  created() {
+    store.dispatch(findAll());
+  },
 
+  methods: {
   },
 };
 </script>
