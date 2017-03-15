@@ -2,11 +2,11 @@
   <div class="">
     <nav class="nav">
       <div class="nav-left">
-        <router-link to="/" class="nav-item">Puppies</router-link>
+        <router-link :to="{ name: 'index' }" class="nav-item">Puppies</router-link>
       </div>
       <div class="nav-right">
-        <router-link to="/" class="nav-item">All Puppies</router-link>
-        <router-link to="/new" class="nav-item">Add Puppy</router-link>
+        <router-link :to="{ name: 'index' }" class="nav-item">All Puppies</router-link>
+        <router-link :to="{ name: 'new'}" class="nav-item">Add Puppy</router-link>
       </div>
     </nav>
 
@@ -17,81 +17,16 @@
         <nav class="panel">
           <p class="panel-heading">Adopt a Pupper</p>
 
-          <div class="panel-block">
+          <div class="panel-block" v-for:"puppy in puppies">
             <div class="media">
               <div class="media-left">
                 <span class="image is-64x64">
-                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
+                  <img :src="puppy.image_url" alt="">
                 </span>
               </div>
               <div class="media-right">
-                <h2 class="name">Lola</h2>
-                <router-link class="is-primary" to="/detail">Read More</router-link>
-              </div>
-            </div>
-          </div>
-          <div class="panel-block">
-            <div class="media">
-              <div class="media-left">
-                <span class="image is-64x64">
-                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-                </span>
-              </div>
-              <div class="media-right">
-                <h2 class="name">Lola</h2>
-                <router-link class="is-primary" to="/detail">Read More</router-link>
-              </div>
-            </div>
-          </div>
-          <div class="panel-block">
-            <div class="media">
-              <div class="media-left">
-                <span class="image is-64x64">
-                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-                </span>
-              </div>
-              <div class="media-right">
-                <h2 class="name">Lola</h2>
-                <router-link class="is-primary" to="/detail">Read More</router-link>
-              </div>
-            </div>
-          </div>
-          <div class="panel-block">
-            <div class="media">
-              <div class="media-left">
-                <span class="image is-64x64">
-                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-                </span>
-              </div>
-              <div class="media-right">
-                <h2 class="name">Lola</h2>
-                <router-link class="is-primary" to="/detail">Read More</router-link>
-              </div>
-            </div>
-          </div>
-          <div class="panel-block">
-            <div class="media">
-              <div class="media-left">
-                <span class="image is-64x64">
-                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-                </span>
-              </div>
-              <div class="media-right">
-                <h2 class="name">Lola</h2>
-                <router-link class="is-primary" to="/detail">Read More</router-link>
-              </div>
-            </div>
-          </div>
-          <div class="panel-block">
-            <div class="media">
-              <div class="media-left">
-                <span class="image is-64x64">
-                  <img src="https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Bernese-Mountain-Dog-600x600.jpg" alt="">
-                </span>
-              </div>
-              <div class="media-right">
-                <h2 class="name">Lola</h2>
-                <router-link class="is-primary" to="/detail">Read More</router-link>
+                <h2 class="name">{{ puppy.name }}</h2>
+                <router-link class="is-primary" :to"{name: 'detail', params: { id: puppy.id } }">Read More</router-link>
               </div>
             </div>
           </div>
@@ -113,20 +48,24 @@
 </template>
 
 <script>
-import Index from './index.vue';
+import store from '../store';
+import { findAll } from '../actions/puppy';
 export default {
-
-  components: {
-    Index,
-  },
+  name: 'Application',
 
   data() {
     return {
+      // Use 'this.$select' to attach the local 'puppies' data to the 'puppies' propety in the state
+      puppies: this.$select('puppies'),
     };
   },
 
-  methods: {
+  // When the app component loads, dispatch the 'findAll' function
+  created() {
+    store.dispatch(findAll());
+  },
 
+  methods: {
   },
 };
 </script>
