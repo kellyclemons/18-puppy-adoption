@@ -75,7 +75,7 @@ export function updateComplete(data = {}) {
 }
 
 export function update(id, formData) {
-  return dispatch => fetch(apiUrl, {
+  return dispatch => fetch(`${apiUrl}/${id}`, {
     method: 'PUT',
     headers: jsonHeaders,
     body: JSON.stringify(formData),

@@ -2,7 +2,7 @@
   <div class="">
     <div v-if="currentPuppy">
       <h2 class="title has-text-centered">{{ currentPuppy.name }}
-        <a @click="adopt" class="button is-primary" v-bind:class="{ 'is-success': currentPuppy.adopeted }">
+        <a @click="adopt" class="button is-primary" v-bind:class="{ 'is-success': currentPuppy.adopted }">
           <span class="icon is-small fa fa-paw" aria hidden="true"></span>
           <span v-if="currentPuppy.adopted">I'm Adopted!</span>
           <span v-else>Adopt Me!</span>
@@ -80,11 +80,12 @@ export default {
     '$route.params.id': 'getPuppy',
   },
 
-  adopt() {
-    store.dispatch(toggleAdopted(this.currentPuppy));
-  },
 
   methods: {
+    adopt() {
+      store.dispatch(toggleAdopted(this.currentPuppy));
+    },
+
     getPuppy() {
       this.currentPuppy = this.puppies.find(puppy => puppy.id == this.$route.params.id);
     },
